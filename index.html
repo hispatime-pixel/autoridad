@@ -1,426 +1,413 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EstoniaEmpresa | La Guía Definitiva para Españoles con OÜ</title>
+  <meta name="description" content="Descubre la verdad sobre las gestorías estonias: comparativa real de Xolo, 1Office y Enty. Transparencia total en costes ocultos, banca y fiscalidad.">
+  <meta name="keywords" content="gestoría Estonia, OÜ Estonia españoles, empresa Estonia, e-residencia, Hacienda España, Xolo vs 1Office, costes ocultos Estonia">
+
+  <!-- Estilos Fintech Báltica -->
+  <style>
+    :root {
+      --azul-balt: #1a365d;
+      --azul-medio: #2d3748;
+      --azul-claro: #4299e1;
+      --blanco: #ffffff;
+      --gris-claro: #f7fafc;
+      --gris-medio: #e2e8f0;
+      --verde: #38a169;
+      --rojo: #e53e3e;
+      --sombra: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      line-height: 1.6;
+      color: var(--azul-medio);
+      background-color: var(--blanco);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: var(--azul-balt);
+      color: var(--blanco);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Sección Principal */
+    .hero {
+      padding: 4rem 0;
+      background: var(--gris-claro);
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--azul-balt);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: var(--azul-medio);
+    }
+
+    /* Tabla de la Verdad */
+    .tabla-verdad {
+      background: var(--blanco);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: var(--sombra);
+      margin: 2rem 0;
+      overflow-x: auto;
+    }
+
+    .tabla-verdad h3 {
+      color: var(--azul-balt);
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+    }
+
+    th {
+      background: var(--azul-balt);
+      color: var(--blanco);
+      padding: 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--gris-medio);
+    }
+
+    tr:nth-child(even) {
+      background: var(--gris-claro);
+    }
+
+    .ganador {
+      background: #e6fffa !important;
+      font-weight: 600;
+      color: var(--azul-balt);
+    }
+
+    .destacado {
+      background: #fff5f5;
+      color: var(--rojo);
+      font-weight: 600;
+      padding: 2px 6px;
+      border-radius: 3px;
+    }
+
+    /* Sección Lead Magnet */
+    .lead-magnet {
+      background: linear-gradient(135deg, var(--azul-balt) 0%, var(--azul-medio) 100%);
+      color: var(--blanco);
+      padding: 3rem 0;
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .lead-magnet h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .lead-magnet p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      opacity: 0.9;
+    }
+
+    .formulario {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      background: var(--verde);
+      color: var(--blanco);
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    button:hover {
+      background: #2f855a;
+    }
+
+    /* Insights */
+    .insights {
+      padding: 3rem 0;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .insight-card {
+      background: var(--blanco);
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: var(--sombra);
+    }
+
+    .insight-card h4 {
+      color: var(--azul-balt);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--azul-medio);
+      color: var(--blanco);
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    footer p {
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .hero h2 {
+        font-size: 1.5rem;
+      }
+
+      th, td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="es"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">title&gt;EstoniaEmpresa | La Guía Definitiva para Españoles con OÜtitle&gt;</p>
-<p class="p1">meta name="description" content="Descubre la verdad sobre las gestorías estonias: comparativa real de Xolo, 1Office y Enty. Transparencia total en costes ocultos, banca y fiscalidad."&gt;</p>
-<p class="p1">meta name="keywords" content="gestoría Estonia, OÜ Estonia españoles, empresa Estonia, e-residencia, Hacienda España, Xolo vs 1Office, costes ocultos Estonia"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Estilos Fintech Báltica --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>:root {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--azul-balt: #1a365d;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--azul-medio: #2d3748;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--azul-claro: #4299e1;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--blanco: #ffffff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--gris-claro: #f7fafc;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--gris-medio: #e2e8f0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--verde: #38a169;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--rojo: #e53e3e;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>--sombra: 0 4px 6px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-medio);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 0 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Header */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 700;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>header p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.9;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Sección Principal */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 4rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--gris-claro);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.hero p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-medio);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Tabla de la Verdad */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tabla-verdad {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--sombra);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow-x: auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.tabla-verdad h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.8rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>table {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-collapse: collapse;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 1rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>th {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>td {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--gris-medio);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>tr:nth-child(even) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--gris-claro);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ganador {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #e6fffa !important;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.destacado {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #fff5f5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--rojo);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2px 6px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 3px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Sección Lead Magnet */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lead-magnet {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: linear-gradient(135deg, var(--azul-balt) 0%, var(--azul-medio) 100%);</p>
-<p class="p1">color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 3rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lead-magnet h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.lead-magnet p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 600px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.9;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.formulario {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 500px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>input[type="email"] {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--verde);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 1rem 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: 600;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #2f855a;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Insights */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.insights {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 3rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.insight-grid {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>display: grid;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));</p>
-<p class="p1"><span class="Apple-converted-space">            </span>gap: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.insight-card {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: var(--sombra);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.insight-card h4 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--azul-balt);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 1rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 1.3rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Footer */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: var(--azul-medio);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: var(--blanco);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 2rem 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>footer p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0.8;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Responsive */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>header h1 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 2rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>.hero h2 {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 1.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>th, td {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>padding: 0.5rem;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>font-size: 0.9rem;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/stylehead&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Header --&gt;</p>
-<p class="p1">header&gt;</p>
-<p class="p1">div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1&gt;EstoniaEmph1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;La guía transparente para españoles que quieren crear su OÜ en Estonia&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Sección Principal --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="hero"&gt;</p>
-<p class="p1">div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;No te dejes engañar por el precio bajo: compara extras reales y soporte enh2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Tras analizar a fondo las principales gestorías estonias, hemos descubierto los costes ocultos, soporte limitado y riesgos fiscales que nadie te cuenta.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Tabla de la Verdad --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="tabla-verdad"&gt;</p>
-<p class="p1">h3&gt;Tabla de la Verdad: Comparativa Real 2026&lt;/h3&gt;</p>
-<p class="p1">table&gt;</p>
-<p class="p1">thead&gt;</p>
-<p class="p1">tr&gt;</p>
-<p class="p1">th&gt;Aspecto&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;th&gt;Xth&gt;</p>
-<p class="p1">th&gt;1Office&lt;/th&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;th&gt;Entth&gt;</p>
-<p class="p1">th&gt;Ganador Confth&gt;</p>
-<p class="p1">tr&gt;</p>
-<p class="p1">thead&gt;</p>
-<p class="p1">tbody&gt;</p>
-<p class="p1">tr&gt;</p>
-<p class="p1">strong&gt;Precio/mtd&gt;</p>
-<p class="p1">td&gt;~59€ Leaptd&gt;</p>
-<p class="p1">td&gt;135€ + VAT&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;~33€td&gt;</p>
-<p class="p1">td class="ganador"&gt;Xolo (barato inicial)&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;strong&gt;VAT extra&lt;/strong&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;¿Incluido?&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;span class="destacado"&gt;65€/hspan&gt; preguntas&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;Notd&gt;</p>
-<p class="p1">td class="ganador"&gt;1Office (transparente)&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;strong&gt;Annualtd&gt;</p>
-<p class="p1">td&gt;~Inclutd&gt;</p>
-<p class="p1">td&gt;250€ aprox&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;Inclutd&gt;</p>
-<p class="p1">td class="ganador"&gt;Empate&lt;/td&gt;</p>
-<p class="p1">&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;strong&gt;Btd&gt;</p>
-<p class="p1">td&gt;LHV/Wise&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;LHV priorittd&gt;</p>
-<p class="p1">td&gt;No dettd&gt;</p>
-<p class="p1">td class="ganador"&gt;1Office&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;strong&gt;Soporte ES&lt;/strong&gt;&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;Email/chat &lt;span class="destacado"&gt;solotd&gt;</p>
-<p class="p1">strong&gt;Tel +372 507192td&gt;</p>
-<p class="p1">td&gt;Ttd&gt;</p>
-<p class="p1">td class="ganador"&gt;1Office&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td&gt;&lt;strong&gt;Anti-Hacitd&gt;</p>
-<p class="p1">td&gt;FAQ susttd&gt;</p>
-<p class="p1">td&gt;PoAtd&gt;</p>
-<p class="p1">td&gt;No visible&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;td class="ganador"&gt;Tú (con nuestra guía)&lt;/td&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/tr&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tbody&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/table&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="text-align: center; margin-top: 1rem; font-style: italic; color: var(--azul-medio);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Datos extraídos de análisis exhaustivo de costes ocultos y soporte real</p>
-<p class="p1">p&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Lead Magnet --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="lead-magnet"&gt;</p>
-<p class="p1">div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3&gt;Manual Anti-Hacienda 2026&lt;/h3&gt;</p>
-<p class="p1">p&gt;Cómo blindar tu OÜ Estonia contra la Dirección Efectiva. Resuelve el miedo #1 de los españoles: ser considerado residente fiscal enp&gt;</p>
-<p class="p1">strong&gt;Inclstrong&gt; Checklist de sustancia, plantillas PoA y 3 casos reales documentp&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="formulario"&gt;</p>
-<p class="p1">form id="lead-form"&gt;</p>
-<p class="p1">input type="email" id="email" name="email" placeholder="Tu email profesional" required&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button type="submit"&gt;Descargar Guía Gratbutton&gt;</p>
-<p class="p1">form&gt;</p>
-<p class="p1">p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;"&gt;Sin spam. Solo información valiosa para proteger tup&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Insights --&gt;</p>
-<p class="p1">section class="insights"&gt;</p>
-<p class="p1">div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h3 style="text-align: center; color: var(--azul-balt); margin-bottom: 1rem;"&gt;Lo que nadie te dice sobre Estonia&lt;/h3&gt;</p>
-<p class="p1">p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--azul-medio);"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Basado en análisis real de decenas de casos españoles e italianos</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1">div class="insight-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="insight-card"&gt;</p>
-<p class="p1">h4&gt;⚠️ Costes Ocultos Reales&lt;/h4&gt;</p>
-<p class="p1">p&gt;1Office cobra &lt;strong&gt;65€/hora&lt;/strong&gt; por responder preguntas del Tax Board sobre VAT. Xolo no tiene precio público fijo para trámites VAT/KMp&gt;</p>
-<p class="p1">p&gt;Cambio de dirección: 1Office 290€/año, Xolo depende de switching (~25€ fee estatalp&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="insight-card"&gt;</p>
-<p class="p1">h4&gt;📞 Soporte en Español Limith4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Solo &lt;strong&gt;1Office ofrece teléfono directstrong&gt; (+372 5071921). Xolo solo tiene chat en español para usuarios Premium (L-V 9-17p&gt;</p>
-<p class="p1">p&gt;Enty no detalla soporte en español en sus materialesp&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="insight-card"&gt;</p>
-<p class="p1">h4&gt;🇪🇸 Riesgo Haciendah4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Hacienda considera tu OÜ "española" si: tomas decisiones desde España, mayoría de administradores son residentes españoles, o no hay sustancia real en Estonia.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;&lt;strong&gt;Solstrong&gt; Dirección física real en Estonia, contact person local, visitas regp&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="insight-card"&gt;</p>
-<p class="p1">h4&gt;🏦 Banca: Éxito Estimh4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Con gestoría: 80% éxito en LHV. Sin gestoría: 40%p&gt;</p>
-<p class="p1">p&gt;Fintech recomendada: Wise/Revolut Business como primer paso, pero Revolut bloquea si no demuestras sustancia enp&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">div&gt;</p>
-<p class="p1">section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
-<p class="p1">footer&gt;</p>
-<p class="p1">div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;© 2026 EstoniaEmpresa.online - Información transparente para emprendedores españoles en Estonia&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;Consulta siempre con profesionales fiscales antes de tomar decisiones empresariales.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p style="font-size: 0.9rem; margin-top: 1rem;"&gt;Esta web es un recurso informativo independiente. No somos gestoría ni asesoría legal.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Script simple para el formulario --&gt;</p>
-<p class="p1">script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('lead-form').addEventListener('submit', function(e) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>e.preventDefault();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const email = document.getElementById('email').value;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Simulación de descarga</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if(email) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>alert('¡Gracias! Revisa tu email para descargar "Manual Anti-Hacienda 2026".\n\nPara una implementación real, conecta este formulario a tu sistema de email marketing.');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.getElementById('email').value = '';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Resaltar filas al pasar el ratón</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const tableRows = document.querySelectorAll('tbody tr');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>tableRows.forEach(row =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>row.addEventListener('mouseenter', function() {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.style.backgroundColor = '#f0f7ff';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">            </span>row.addEventListener('mouseleave', function() {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>this.style.backgroundColor = '';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/scriptbody&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>EstoniaEmpresa</h1>
+      <p>La guía transparente para españoles que quieren crear su OÜ en Estonia</p>
+    </div>
+  </header>
+
+  <!-- Sección Principal -->
+  <section class="hero">
+    <div class="container">
+      <h2>No te dejes engañar por el precio bajo: compara extras reales y soporte en</h2>
+      <p>Tras analizar a fondo las principales gestorías estonias, hemos descubierto los costes ocultos, soporte limitado y riesgos fiscales que nadie te cuenta.</p>
+
+      <!-- Tabla de la Verdad -->
+      <div class="tabla-verdad">
+        <h3>Tabla de la Verdad: Comparativa Real 2026</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Aspecto</th>
+              <th>Xolo</th>
+              <th>1Office</th>
+              <th>Enty</th>
+              <th>Ganador Confiable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Precio/mes</strong></td>
+              <td>~59€ Leap</td>
+              <td>135€ + VAT</td>
+              <td>~33€</td>
+              <td class="ganador">Xolo (barato inicial)</td>
+            </tr>
+            <tr>
+              <td><strong>VAT extra</strong></td>
+              <td>¿Incluido?</td>
+              <td><span class="destacado">65€/hora</span> preguntas</td>
+              <td>No</td>
+              <td class="ganador">1Office (transparente)</td>
+            </tr>
+            <tr>
+              <td><strong>Annual</strong></td>
+              <td>~Incluido</td>
+              <td>250€ aprox</td>
+              <td>Incluido</td>
+              <td class="ganador">Empate</td>
+            </tr>
+            <tr>
+              <td><strong>Banca</strong></td>
+              <td>LHV/Wise</td>
+              <td>LHV prioridad</td>
+              <td>No detallado</td>
+              <td class="ganador">1Office</td>
+            </tr>
+            <tr>
+              <td><strong>Soporte ES</strong></td>
+              <td>Email/chat <span class="destacado">solo</span> Premium</td>
+              <td><strong>Tel +372 5071921</strong></td>
+              <td>TBD</td>
+              <td class="ganador">1Office</td>
+            </tr>
+            <tr>
+              <td><strong>Anti-Hacienda</strong></td>
+              <td>FAQ sustituye</td>
+              <td>PoA incluido</td>
+              <td>No visible</td>
+              <td class="ganador">Tú (con nuestra guía)</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="text-align: center; margin-top: 1rem; font-style: italic; color: var(--azul-medio);">
+          Datos extraídos de análisis exhaustivo de costes ocultos y soporte real
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Magnet -->
+  <section class="lead-magnet">
+    <div class="container">
+      <h3>Manual Anti-Hacienda 2026</h3>
+      <p>Cómo blindar tu OÜ Estonia contra la Dirección Efectiva. Resuelve el miedo #1 de los españoles: ser considerado residente fiscal en España.</p>
+      <p><strong>Incluye:</strong> Checklist de sustancia, plantillas PoA y 3 casos reales documentados.</p>
+
+      <div class="formulario">
+        <form id="lead-form">
+          <input type="email" id="email" name="email" placeholder="Tu email profesional" required>
+          <button type="submit">Descargar Guía Gratis</button>
+        </form>
+        <p style="font-size: 0.9rem; margin-top: 1rem; opacity: 0.8;">Sin spam. Solo información valiosa para proteger tu negocio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section class="insights">
+    <div class="container">
+      <h3 style="text-align: center; color: var(--azul-balt); margin-bottom: 1rem;">Lo que nadie te dice sobre Estonia</h3>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--azul-medio);">
+        Basado en análisis real de decenas de casos españoles e italianos
+      </p>
+
+      <div class="insight-grid">
+        <div class="insight-card">
+          <h4>⚠️ Costes Ocultos Reales</h4>
+          <p>1Office cobra <strong>65€/hora</strong> por responder preguntas del Tax Board sobre VAT. Xolo no tiene precio público fijo para trámites VAT/KMP.</p>
+          <p>Cambio de dirección: 1Office 290€/año, Xolo depende de switching (~25€ fee estatal).</p>
+        </div>
+
+        <div class="insight-card">
+          <h4>📞 Soporte en Español Limitado</h4>
+          <p>Solo <strong>1Office ofrece teléfono directo</strong> (+372 5071921). Xolo solo tiene chat en español para usuarios Premium (L-V 9-17).</p>
+          <p>Enty no detalla soporte en español en sus materiales.</p>
+        </div>
+
+        <div class="insight-card">
+          <h4>🇪🇸 Riesgo Hacienda</h4>
+          <p>Hacienda considera tu OÜ "española" si: tomas decisiones desde España, mayoría de administradores son residentes españoles, o no hay sustancia real en Estonia.</p>
+          <p><strong>Solución:</strong> Dirección física real en Estonia, contact person local, visitas regulares.</p>
+        </div>
+
+        <div class="insight-card">
+          <h4>🏦 Banca: Éxito Estimado</h4>
+          <p>Con gestoría: 80% éxito en LHV. Sin gestoría: 40%.</p>
+          <p>Fintech recomendada: Wise/Revolut Business como primer paso, pero Revolut bloquea si no demuestras sustancia en Estonia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 EstoniaEmpresa.online - Información transparente para emprendedores españoles en Estonia</p>
+      <p>Consulta siempre con profesionales fiscales antes de tomar decisiones empresariales.</p>
+      <p style="font-size: 0.9rem; margin-top: 1rem;">Esta web es un recurso informativo independiente. No somos gestoría ni asesoría legal.</p>
+    </div>
+  </footer>
+
+  <!-- Script simple para el formulario -->
+  <script>
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value;
+
+      // Simulación de descarga
+      if(email) {
+        alert('¡Gracias! Revisa tu email para descargar "Manual Anti-Hacienda 2026".\n\nPara una implementación real, conecta este formulario a tu sistema de email marketing.');
+        document.getElementById('email').value = '';
+      }
+    });
+
+    // Resaltar filas al pasar el ratón
+    const tableRows = document.querySelectorAll('tbody tr');
+    tableRows.forEach(row => {
+      row.addEventListener('mouseenter', function() {
+        this.style.backgroundColor = '#f0f7ff';
+      });
+      row.addEventListener('mouseleave', function() {
+        this.style.backgroundColor = '';
+      });
+    });
+  </script>
 </body>
 </html>
